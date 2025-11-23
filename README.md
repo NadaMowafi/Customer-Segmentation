@@ -1,1 +1,89 @@
-# Customer Segmentation Using K-Means 🧩 1. Description: - A simple ML workflow showing how clustering can support marketing and business decisions. 📊 2. Dataset : - Customer Segmentation : Clustering Dataset — Kaggle 🎯 3. Goals: - Perform exploratory analysis of the dataset - Apply feature scaling - Determine optimal number of clusters using the Elbow Method - Apply K-Means clustering - Visualize customer segments in 2D - Analyze average spending and income per cluster - Compare K-Means with DBSCAN 🛠️ 4. Tools & Libraries: - Python - Pandas - NumPy - Matplotlib / Seaborn - Scikit-learn - Jupyter Notebook for development ## Results and Business Insights After applying K-Means clustering on the engineered features (Age, Income, Total_Spending, NumStorePurchases, NumWebPurchases, NumWebVisitsMonth, Recency), the optimal number of clusters was selected using the Elbow Method. The final model identified **6 distinct customer segments**: 1. **Cluster 0 – Low-Value Inactive Customers** Lower income and spending, low purchase counts and high recency. These customers have not purchased recently and represent limited revenue contribution. 2. **Cluster 1 – Affluent Multi-Channel Spenders** High income and high total spending with strong activity in both web and store channels. This is a key segment for targeted cross-channel campaigns. 3. **Cluster 2 – Active Mid-Value Shoppers** Medium–high income and spending with balanced web and in-store purchases and low recency. These customers are currently engaged and can be grown into higher-value segments. 4. **Cluster 3 – Top-Tier High-Value Customers** Highest income and highest spending with frequent store purchases. These customers are the “VIP” group and should receive premium loyalty programs and retention-focused strategies. 5. **Cluster 4 – Senior Low-Activity Customers** Oldest average age, modest income and relatively low spending. Communication and offers may need to be adapted to this segment’s preferences. 6. **Cluster 5 – New / Recently Active Low-Spend Customers** Recently active customers with low spending and low purchase counts. This segment is ideal for onboarding, education and upselling campaigns. Overall, the clustering results reveal clear differences in income, spending intensity, recency and channel usage, which can be directly translated into tailored marketing actions.
+# Customer Segmentation Using K-Means
+
+## 1. Description
+This project demonstrates how unsupervised machine learning can identify meaningful customer segments based on purchasing behavior, engagement, and demographics.  
+The segmentation provides actionable insights for marketing teams, customer retention planning, and personalized strategies.
+
+---
+
+## 2. Dataset
+**Customer Segmentation Dataset — Kaggle**  
+Contains demographic information, product spending, purchase frequency, web activity, and recency.
+
+---
+
+## 3. Goals
+- Perform exploratory data analysis  
+- Engineer useful features (Age, Total Spending, Tenure, etc.)  
+- Apply feature scaling  
+- Determine the optimal number of clusters using the Elbow Method  
+- Train a K-Means clustering model  
+- Visualize clusters in 2D  
+- Analyze income and spending across segments  
+- Compare K-Means with DBSCAN  
+- Deploy a prediction app using Streamlit  
+
+---
+
+## 4. Tools & Libraries
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+- Joblib  
+- Streamlit  
+- Jupyter Notebook  
+
+---
+
+## 5. Results and Business Insights
+
+K-Means clustering was applied to the engineered features:
+
+**Age, Income, Total_Spending, NumStorePurchases, NumWebPurchases, NumWebVisitsMonth, Recency**
+
+Using the Elbow Method, the optimal number of clusters was determined to be **6**.
+
+### Customer Segments
+
+#### Cluster 0 – Low-Value Inactive Customers
+Low income, low spending, high recency, minimal engagement.
+
+#### Cluster 1 – Affluent Multi-Channel Spenders
+High income, strong spending, active in both online and in-store channels.
+
+#### Cluster 2 – Active Mid-Value Shoppers
+Moderate income and spending, balanced purchase patterns, low recency.
+
+#### Cluster 3 – Top-Tier High-Value Customers
+Highest income and spending. Premium customers suited for loyalty programs.
+
+#### Cluster 4 – Senior Low-Activity Customers
+Older demographic with modest income and low engagement.
+
+#### Cluster 5 – New or Recently Active Low-Spend Customers
+Recent activity but low spending. Ideal for onboarding and upselling.
+
+---
+
+## 6. Installation
+
+Clone the repository:
+
+```bash
+git clone <your-repo-url>
+cd Customer-Segmentation
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+Run the Streamlit app:
+```bash
+streamlit run src/segmentation.py
+```
+
