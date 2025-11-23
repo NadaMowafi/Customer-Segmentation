@@ -22,5 +22,48 @@
 - Scikit-learn
 - Jupyter Notebook for development
 
+## Results and Business Insights
+
+After applying K-Means clustering on the engineered features
+(`Age`, `Income`, `Total_Spending`, `NumStorePurchases`,
+`NumWebPurchases`, `NumWebVisitsMonth`, `Recency`), the optimal
+number of clusters was selected using the Elbow Method.
+
+The final model identified **6 distinct customer segments**:
+
+1. **Cluster 0 – Low-Value Inactive Customers**  
+   Lower income and spending, low purchase counts and high recency.
+   These customers have not purchased recently and represent limited
+   revenue contribution.
+
+2. **Cluster 1 – Affluent Multi-Channel Spenders**  
+   High income and high total spending with strong activity in both
+   web and store channels. This is a key segment for targeted
+   cross-channel campaigns.
+
+3. **Cluster 2 – Active Mid-Value Shoppers**  
+   Medium–high income and spending with balanced web and in-store
+   purchases and low recency. These customers are currently engaged
+   and can be grown into higher-value segments.
+
+4. **Cluster 3 – Top-Tier High-Value Customers**  
+   Highest income and highest spending with frequent store purchases.
+   These customers are the “VIP” group and should receive premium
+   loyalty programs and retention-focused strategies.
+
+5. **Cluster 4 – Senior Low-Activity Customers**  
+   Oldest average age, modest income and relatively low spending.
+   Communication and offers may need to be adapted to this segment’s
+   preferences.
+
+6. **Cluster 5 – New / Recently Active Low-Spend Customers**  
+   Recently active customers with low spending and low purchase counts.
+   This segment is ideal for onboarding, education and upselling
+   campaigns.
+
+Overall, the clustering results reveal clear differences in income,
+spending intensity, recency and channel usage, which can be directly
+translated into tailored marketing actions.
+
   
   
