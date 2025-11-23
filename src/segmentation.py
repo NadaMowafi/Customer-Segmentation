@@ -10,8 +10,9 @@ st.set_page_config(
 )
 
 # -------------------- Load model & scaler --------------------
-kmeans = joblib.load("../Models/kmeans_model.pkl")
-scaler = joblib.load("../Models/scaler.pkl")
+kmeans = joblib.load("Models/kmeans_model.pkl")
+scaler = joblib.load("Models/scaler.pkl")
+
 
 # Cluster labels (personas)
 cluster_labels = {
